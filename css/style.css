@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&display=swap);
+*{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}  
+html{
+    font-size: 100%;
+}  
+body{
+    background-color: rgb(255,205,180);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 100%;
+    margin: 0% auto;
+}
+/* Clases */
+.borde{ 
+    border: 1px solid black;
+    }
+.encabezado_top{    
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+}
+.botonera{
+    grid-area: uno;
+}
+.principal{
+    grid-area: dos;
+}
+.aparte{
+    grid-area: tres;
+}
+.galeria{
+    display: inline-flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    border: 1px solid;
+    background-color: white;
+    overflow-y: auto;
+}
+.galeria img{
+    max-width: 250px;
+    max-height: 250px;
+    padding: 10px;
+}
+.pie{
+    background-color : rgb(255,178,140);
+    grid-area: cuatro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Terminan las clases */
+
+#contenedorgrid{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "uno"
+    "dos" 
+    "tres"
+    "cuatro";
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255,178,140);
+}
+    .botonera ul{
+        display: flex;
+        list-style: none;
+    }
+        .botonera ul li{
+            margin: 5px;
+            padding: 5px;
+        }
+            .botonera ul li a{
+            text-decoration: none;
+            color:inherit;
+            }
+            .botonera ul{
+                color:#fff;
+            }
+            .botonera li:hover{
+            background-color:hsla(15, 82%, 51%, 0.5);
+            transition: background-color .5s;
+            }
+@media (min-width:768px){
+    #contenedorgrid{
+        grid-template-areas: 
+        "uno uno"
+        "dos tres"
+        "cuatro cuatro";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
