@@ -1,88 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- Mi CSS -->
-        <link rel="stylesheet" href="../css/style.css">
-    
-        <title>Micelu</title>
-    </head>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Micelu</title>
+</head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="botonera">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../img/Mi-celu-transparente.png" alt="micelulogo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../vistas/productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../vistas/promociones.html">Promociones</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../vistas/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../vistas/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vistas/promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vistas/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
-        </nav>
+    </nav>
     <main class="principal">
-            <section>
-                <form action="envio.php">
+        <section>
+            <form action="envio.php">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <br>
+                    <label for="cumpleaños">Fecha de nacimiento:</label>
+                    <input type="date" id="cumpleaños" name="cumpleaños">
+                    <br>
+                    <label for="localidad">Departamento</label>
+                    <select name="localidad" id="localidad">
+                        <option value="Montevideo">Montevideo</option>
+                        <option value="Colonia">Colonia</option>
+                        <option value="Maldonado">Ma ldonado</option>
+                        <option value="San josé">San josé</option>
+                    </select>
+                    <br>
+                    <label for="Calle">Calle</label>
+                    <input type="Calle" name="Calle" id="Calle">
+                    <br>
+                    <label for="Numero de puerta">Numero de puerta</label>
+                    <input type="Numero de puerta" name="Numero de puerta" id="Numero de puerta">
+                </fieldset>
+                <section>
                     <fieldset>
-                        <legend>Informacion personal</legend>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre">
+                        <label for="local">Retiro en el local</label>
+                        <input type="radio" id="local" value="local" name="envío">
                         <br>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email">
-                        <br>
-                        <label for="cumpleaños">Fecha de nacimiento:</label>
-                        <input type="date" id="cumpleaños" name="cumpleaños">
-                        <br>
-                        <label for="localidad">Departamento</label>
-                        <select name="localidad" id="localidad">
-                            <option value="Montevideo">Montevideo</option>
-                            <option value="Colonia">Colonia</option>
-                            <option value="Maldonado">Ma ldonado</option>
-                            <option value="San josé">San josé</option>
+                        <label for="domicilio">Envío a mi domicilio</label>
+                        <input type="radio" id="domicilio" name="envío">
                         </select>
-                        <br>
-                        <label for="Calle">Calle</label>
-                        <input type="Calle" name="Calle" id="Calle">
-                        <br>
-                        <label for="Numero de puerta">Numero de puerta</label>
-                        <input type="Numero de puerta" name="Numero de puerta" id="Numero de puerta">
                     </fieldset>
-                        <section>
-                            <fieldset>
-                                <label for="local">Retiro en el local</label>
-                                <input type="radio" id="local" value="local" name="envío">
-                                <br>
-                                <label for="domicilio">Envío a mi domicilio</label>
-                                <input type="radio" id="domicilio" name="envío">
-                                </select>
-                            </fieldset>
-                        </form>
-                </section>
-            </section>
+            </form>
+        </section>
+        </section>
         <br>
         <label for="mensaje">Deje su mensaje</label>
         <br>
@@ -90,66 +94,76 @@
         <input type="reset" value="Cancelar">
         <input type="submit" value="Enviar">
         <h2>Aquí estamos nosotros!</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.6023753962327!2d-57.23635669912841!3d-34.284190393121115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3c101bee8567d%3A0xa624881c322d30fd!2sGilomen%201255%2C%2070300%20Nueva%20Helvecia%2C%20Departamento%20de%20Colonia!5e0!3m2!1ses-419!2suy!4v1653608409644!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.6023753962327!2d-57.23635669912841!3d-34.284190393121115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3c101bee8567d%3A0xa624881c322d30fd!2sGilomen%201255%2C%2070300%20Nueva%20Helvecia%2C%20Departamento%20de%20Colonia!5e0!3m2!1ses-419!2suy!4v1653608409644!5m2!1ses-419!2suy"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
-<!-- Empieza Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-    <section class="">
-        <div class="container text-center text-md-start mt-5">
-        <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Contenido -->
-            <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Mi Celu
-            </h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem vel numquam aliquam? Inventore fugit nihil cupiditate praesentium culpa est, quaerat recusandae deleniti repellendus. Quos facere dolore ab perspiciatis quasi!</p>
-            </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-                Menú
-            </h6>
-            <p>
-                <a href="/vistas/productos.html" class="text-reset">Productos</a>
-            </p>
-            <p>
-                <a href="/vistas/promociones.html" class="text-reset">Promociones</a>
-            </p>
-            <p>
-                <a href="/vistas/nosotros.html" class="text-reset">Nosotros</a>
-            </p>
-            <p>
-                <a href="/vistas/contacto.html" class="text-reset">Contacto</a>
-            </p>
-            </div>
+    <!-- Empieza Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Contenido -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Mi Celu
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem vel numquam aliquam?
+                            Inventore fugit nihil cupiditate praesentium culpa est, quaerat recusandae deleniti
+                            repellendus. Quos facere dolore ab perspiciatis quasi!</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Menú
+                        </h6>
+                        <p>
+                            <a href="/vistas/productos.html" class="text-reset">Productos</a>
+                        </p>
+                        <p>
+                            <a href="/vistas/promociones.html" class="text-reset">Promociones</a>
+                        </p>
+                        <p>
+                            <a href="/vistas/nosotros.html" class="text-reset">Nosotros</a>
+                        </p>
+                        <p>
+                            <a href="/vistas/contacto.html" class="text-reset">Contacto</a>
+                        </p>
+                    </div>
 
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-                Redes
-            </h6>
-            <p><a href="https://www.facebook.com/EstampaNueva" target="_blank"><img src="/img/facebook_footer.png" alt=""¿></a></p>
-            <p><a href="https://www.instagram.com/nueva.estampa" target="_blank"><img src="/img/instagram_footer.png" alt=""></a></p>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Redes
+                        </h6>
+                        <p><a href="https://www.facebook.com/EstampaNueva" target="_blank"><img
+                                    src="../img/facebook_footer.png" alt="" ¿></a></p>
+                        <p><a href="https://www.instagram.com/nueva.estampa" target="_blank"><img
+                                    src="../img/instagram_footer.png" alt=""></a></p>
+                    </div>
+
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contacto
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Colonia, Nueva Helvecia, UY</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            lorem@ipsum.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
             </div>
-        
-        
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-                Contacto
-            </h6>
-            <p><i class="fas fa-home me-3"></i> Colonia, Nueva Helvecia, UY</p>
-            <p>
-                <i class="fas fa-envelope me-3"></i>
-                lorem@ipsum.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-            </div>
-        </div>
-        </div>
-    </section>
+        </section>
     </footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
