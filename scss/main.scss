@@ -1,0 +1,9 @@
+@import "partials/header";
+@import "partials/principal";
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #020024;
+    background: linear-gradient(90deg, #020024 0%, #090979 43%, #00d4ff 100%); }

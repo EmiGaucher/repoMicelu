@@ -1,34 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
-.botonera {
-  background-color: antiquewhite; }
-
-.font {
-  color: red;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 2em;
-  text-align: right;
-  text-decoration: none; }
-
-h1 {
-  font-weight: 300;
-  font-size: 2em;
-  text-align: left;
-  text-decoration: none; }
-
-body {
-  background-color: rgba(255, 85, 0, 0.5); }
-
-.bg-black {
-  background-color: black; }
-
-.bg-white {
-  background-color: white; }
-
-* {
+/*header*/
+*{
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
-body {
-  background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #090979 43%, #00d4ff 100%); }
+.navbar {
+  padding: 0;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logoContainer {
+  width: 40%;
+}
+
+.logo {
+  width: 300px;
+}
+.navbar-nav{
+  align-items: flex-end;
+}
+.nav-link{
+  color:#ff4000;
+  font-size:;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(255, 72, 0, 0.55);
+  border-color: rgba(0,0,0,.1);
+}
+
+
+/*main*/

@@ -1,0 +1,32 @@
+header{
+    .navbar{
+        padding: 0;
+        .container-fluid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .logocontainer{
+                width: 40%;
+                .logo{
+                    width: 100%;
+                }
+                .collapse{
+                    .navbar-nav{
+                        align-items: flex-end;
+                        .nav-item{
+                            .nav-link{
+                                color:#090979;
+                                font-weight: 700;
+                                &:hover{  
+                                    color:#090979;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
