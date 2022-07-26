@@ -1,0 +1,15 @@
+.filtro{
+    display: inline-block;
+}
+.boton{
+    display: flex;
+    @extend %botones;
+}
+.aparte{
+    .galeria{
+        display: inline-flex;
+        .imgProducto{
+            @extend %imagenChica;
+        }
+    }
+}
