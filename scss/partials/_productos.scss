@@ -7,9 +7,13 @@
 }
 .aparte{
     .galeria{
-        display: inline-flex;
+        @include flex(flex, row, center);
+        margin-bottom: map-get($map: $estilos, $key: margin-bottom);
         .imgProducto{
             @extend %imagenChica;
         }
     }
+}
+.claseEjemploMap{
+    color: map-get($map: $estilos , $key:color );
 }

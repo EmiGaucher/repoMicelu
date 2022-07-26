@@ -1,4 +1,6 @@
-%botones{
+// extend
+
+%botones {
     width: 50%;
     margin-left: 25%;
     height: 2rem;
@@ -6,15 +8,30 @@
     border-radius: 5px;
     margin-top: 1rem;
 }
-%imagenChica{
+
+%mensaje {
+    border-radius: 2px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+%imagenChica {
     width: 540px;
 }
-%imagenMediana{
+
+%imagenMediana {
     width: 720px;
 }
-%imagenGrande{
+
+%imagenGrande {
     width: 960px;
 }
-%imagenMuygrande{
+
+%imagenMuygrande {
     width: 1140px;
+}
+
+%h2Centro {
+    text-align: center;
 }

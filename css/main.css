@@ -10,6 +10,9 @@
 .aparte .galeria .imgProducto {
   width: 540px; }
 
+.tituloH2 {
+  text-align: center; }
+
 header .navbar {
   padding: 0; }
   header .navbar .container-fluid {
@@ -43,10 +46,18 @@ header .navbar {
   display: flex; }
 
 .aparte .galeria {
-  display: inline-flex; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.claseEjemploMap {
+  color: black; }
 
 .boton {
   display: inline-block; }
+  .boton:hover {
+    background-color: bisque;
+    border-color: #18caa9; }
 
 * {
   padding: 0;

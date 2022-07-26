@@ -1,4 +1,11 @@
 .boton{
     display: inline-block;
     @extend %botones;
-}
+    &:hover{
+        background-color: bisque;
+        border-color: $colorHover;
+    }
+    }
+    .tituloH2{
+        @extend%h2Centro
+    }
